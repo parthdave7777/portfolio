@@ -659,14 +659,56 @@ textarea.form-control {
     aspect-ratio: 1/1; /* Square on mobile */
   }
   
-  /* Scale down showcase cards for mobile */
-  .project-card { width: 260px; height: 260px; }
-  .project-card.large { width: 300px; height: 340px; }
-  .project-card.tall { width: 260px; height: 340px; }
-  .project-card.wide { width: 300px; height: 260px; }
+  /* Mobile: Vertical Stack Layout for Showcase */
+  .showcase-track {
+    flex-direction: column;
+    animation: none !important;
+    width: 100%;
+    padding: 0;
+    gap: 24px;
+  }
   
-  .project-card .card-visual {
-    height: 100% !important; /* It's flex now, not grid */
+  .showcase-wrapper {
+    mask-image: none;
+    -webkit-mask-image: none;
+    padding-bottom: 0;
+  }
+  
+  .bento-group {
+    flex-direction: column;
+    width: 100%;
+    gap: 24px;
+  }
+  
+  .bento-col {
+    width: 100%;
+    gap: 24px;
+  }
+  
+  /* Hide the duplicate bento group used for infinite scroll */
+  .bento-group:nth-child(2) {
+    display: none;
+  }
+  
+  .project-card,
+  .project-card.large,
+  .project-card.tall,
+  .project-card.wide {
+    width: 100% !important;
+    height: 380px !important;
+  }
+  
+  /* Make text visible by default since mobile lacks hover */
+  .project-card .project-info {
+    height: auto !important;
+    min-height: 60%;
+    padding: 24px !important;
+  }
+  
+  .project-card .project-desc {
+    opacity: 1 !important;
+    max-height: 120px !important;
+    margin-top: 12px !important;
   }
   
   .about-section {
