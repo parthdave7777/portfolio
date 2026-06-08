@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me — Altitude</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a class="logo" href="index.htm">
+      <svg class="logo-icon" viewBox="0 0 28 28" fill="none">
+        <path d="M14 2L2 26h24L14 2z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round" />
+        <path d="M8 26L14 14l6 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+      </svg>
+      Altitude
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.htm">Work</a></li>
+      <li><a href="about.htm" class="active">About</a></li>
+      <li><a href="services.htm">Services</a></li>
+      <li><a href="contact.htm">Contact</a></li>
+    </ul>
+    <a href="contact.htm" class="btn-nav">
+      Let's Talk
+      <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8">
+        <path d="M2 7h10M7 2l5 5-5 5" />
+      </svg>
+    </a>
+  </nav>
+
+  <!-- SPLIT HERO -->
+  <section class="split-layout">
+    <div class="split-hero__text reveal">
+      <p class="hero-eyebrow">Who I am</p>
+      <h1 class="hero-title" style="font-size: clamp(40px, 5vw, 64px);">
+        Hi, I'm <span class="highlight">Alex</span>.<br>
+        A multidisciplinary<br>
+        digital creator.
+      </h1>
+      <p class="hero-sub" style="margin-bottom: 24px;">I bridge the gap between design and engineering to create products that not only look beautiful but perform flawlessly.</p>
+      <a href="#bio" class="btn-secondary">
+        Read My Story
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8">
+          <path d="M7 2l0 10M2 7l5 5 5-5" />
+        </svg>
+      </a>
+    </div>
+    
+    <div class="split-hero__image reveal" style="transition-delay: 0.2s;">
+      <div class="photo-frame">
+        <div class="photo-decor"></div>
+        <!-- Mock photo silhouette -->
+        <div style="position:absolute; bottom:0; left:50%; transform:translateX(-50%); width: 70%; height: 80%; background: var(--green-mid); border-radius: 50% 50% 0 0; opacity: 0.5;"></div>
+        <div style="position:absolute; bottom:0; left:50%; transform:translateX(-50%); width: 40%; height: 40%; background: var(--accent-bright); border-radius: 50% 50% 0 0; opacity: 0.8;"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BIO & TIMELINE -->
+  <section class="about-section" id="bio">
+    <div class="about-grid">
+      <div class="reveal">
+        <div class="work-eyebrow">My Background</div>
+        <h2 class="work-title" style="font-size: 32px; margin-bottom: 24px;">Passionate about pixels and clean code.</h2>
+        <p style="color: var(--gray); line-height: 1.8; margin-bottom: 16px;">
+          For the past 8 years, I've been helping startups and established brands transform their ideas into tangible digital experiences. I believe in user-centric design principles backed by solid technical foundations.
+        </p>
+        <p style="color: var(--gray); line-height: 1.8; margin-bottom: 32px;">
+          When I'm not coding or designing, you can find me exploring the outdoors or reading up on the latest tech trends.
+        </p>
+
+        <h3 style="font-size: 16px; font-weight: 600; margin-top: 48px;">Core Skills</h3>
+        <div class="skill-tags">
+          <div class="tag">UI/UX Design</div>
+          <div class="tag">Frontend Development</div>
+          <div class="tag">React & Next.js</div>
+          <div class="tag">Figma Prototyping</div>
+          <div class="tag">Design Systems</div>
+          <div class="tag">Web Animations</div>
+          <div class="tag">CSS Architecture</div>
+        </div>
+      </div>
+
+      <div class="reveal" style="transition-delay: 0.2s;">
+        <div class="work-eyebrow">Experience</div>
+        <div class="timeline">
+          
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2023 - Present</div>
+            <div class="timeline-title">Independent Consultant</div>
+            <div class="timeline-desc">Partnering directly with founders to launch MVPs and scale product designs.</div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2020 - 2023</div>
+            <div class="timeline-title">Senior Product Designer</div>
+            <div class="timeline-desc">Led the design team at TechFlow, creating comprehensive design systems and driving user growth.</div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2017 - 2020</div>
+            <div class="timeline-title">Frontend Developer</div>
+            <div class="timeline-desc">Developed interactive web applications for a variety of global e-commerce clients.</div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-top reveal">
+      <h2 class="footer-massive">Let's work together.</h2>
+      <a href="contact.htm" class="footer-cta-btn">
+        Start a project
+        <svg width="16" height="16" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 7h10M7 2l5 5-5 5" /></svg>
+      </a>
+    </div>
+    <div class="footer-content reveal">
+      <div class="footer-col">
+        <h3 style="font-family: 'Bebas Neue', sans-serif; font-size: 28px; letter-spacing: 1px; color: var(--white);">Altitude</h3>
+        <p style="color: rgba(255,255,255,0.5); font-size: 14px; margin-top: 12px; line-height: 1.6; max-width: 250px;">
+          Digital solutions that scale. Crafting premium web experiences for forward-thinking brands.
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <a href="index.htm">Work</a>
+        <a href="about.htm">About</a>
+        <a href="services.htm">Services</a>
+      </div>
+      <div class="footer-col">
+        <h4>Socials</h4>
+        <a href="#">Twitter</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Dribbble</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="mailto:hello@altitude.com">hello@altitude.com</a>
+        <p style="color: rgba(255,255,255,0.5); font-size: 14px; margin-top: 8px;">New York, NY</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Altitude Digital. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

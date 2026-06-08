@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Altitude</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a class="logo" href="index.htm">
+      <svg class="logo-icon" viewBox="0 0 28 28" fill="none">
+        <path d="M14 2L2 26h24L14 2z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round" />
+        <path d="M8 26L14 14l6 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+      </svg>
+      Altitude
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.htm">Work</a></li>
+      <li><a href="about.htm">About</a></li>
+      <li><a href="services.htm">Services</a></li>
+      <li><a href="contact.htm" class="active">Contact</a></li>
+    </ul>
+    <a href="contact.htm" class="btn-nav">
+      Let's Talk
+      <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8">
+        <path d="M2 7h10M7 2l5 5-5 5" />
+      </svg>
+    </a>
+  </nav>
+
+  <!-- CONTACT LAYOUT -->
+  <section class="contact-layout">
+    
+    <!-- Left: Form -->
+    <div class="contact-left">
+      <div class="contact-left-text reveal">
+        <h1 class="contact-headline">Let's build<br>something<br><span class="highlight">great.</span></h1>
+        <p style="color: var(--gray); margin-bottom: 40px;">Fill out the form below and I'll get back to you within 24 hours.</p>
+      </div>
+      
+      <form class="contact-form reveal" style="transition-delay: 0.2s;" action="#" method="POST">
+        <div class="form-group">
+          <label class="form-label">Name</label>
+          <input type="text" class="form-control" placeholder="John Doe">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Email</label>
+          <input type="email" class="form-control" placeholder="john@example.com">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Project Details</label>
+          <textarea class="form-control" placeholder="Tell me about your project, timeline, and budget..."></textarea>
+        </div>
+        <button type="button" class="btn-submit">
+          Send Message
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M2 7h10M7 2l5 5-5 5" />
+          </svg>
+        </button>
+      </form>
+    </div>
+
+    <!-- Right: Info -->
+    <div class="contact-right">
+      <div class="contact-info-block reveal" style="transition-delay: 0.3s;">
+        <h4>Email Me</h4>
+        <a href="mailto:hello@alex-portfolio.com">hello@alex-portfolio.com</a>
+      </div>
+      
+      <div class="contact-info-block reveal" style="transition-delay: 0.4s;">
+        <h4>Location</h4>
+        <p>Based in New York,<br>Working Worldwide.</p>
+      </div>
+      
+      <div class="contact-info-block reveal" style="transition-delay: 0.5s;">
+        <h4>Socials</h4>
+        <div class="social-links">
+          <a href="#" class="social-link" title="Twitter">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+          </a>
+          <a href="#" class="social-link" title="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="#" class="social-link" title="Dribbble">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"/></svg>
+          </a>
+        </div>
+      </div>
+      
+      <div class="reveal" style="margin-top: auto; padding-top: 60px; transition-delay: 0.6s;">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span style="display: block; width: 8px; height: 8px; background: var(--accent-bright); border-radius: 50%; box-shadow: 0 0 10px var(--accent-bright);"></span>
+          <span style="font-size: 13px; color: rgba(255,255,255,0.7);">Currently accepting new clients</span>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-top reveal">
+      <h2 class="footer-massive">Let's work together.</h2>
+      <a href="contact.htm" class="footer-cta-btn">
+        Start a project
+        <svg width="16" height="16" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 7h10M7 2l5 5-5 5" /></svg>
+      </a>
+    </div>
+    <div class="footer-content reveal">
+      <div class="footer-col">
+        <h3 style="font-family: 'Bebas Neue', sans-serif; font-size: 28px; letter-spacing: 1px; color: var(--white);">Altitude</h3>
+        <p style="color: rgba(255,255,255,0.5); font-size: 14px; margin-top: 12px; line-height: 1.6; max-width: 250px;">
+          Digital solutions that scale. Crafting premium web experiences for forward-thinking brands.
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <a href="index.htm">Work</a>
+        <a href="about.htm">About</a>
+        <a href="services.htm">Services</a>
+      </div>
+      <div class="footer-col">
+        <h4>Socials</h4>
+        <a href="#">Twitter</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Dribbble</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="mailto:hello@altitude.com">hello@altitude.com</a>
+        <p style="color: rgba(255,255,255,0.5); font-size: 14px; margin-top: 8px;">New York, NY</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Altitude Digital. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
